@@ -1,6 +1,17 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Poppins&family=Source+Sans+Pro&display=swap');
 
+/* Font faces - PERSIAN (fa) */
+@font-face {
+    font-family: 'Vazir';
+    src: url('fonts/Vazir.ttf');
+}
+
+@font-face {
+    font-family: 'Tanha';
+    src: url('fonts/Tanha.ttf');
+}
+
 /* Reset Default settings */
 * {
     margin: 0;
@@ -13,10 +24,15 @@
     transition: 150ms !important;
 }
 
+*::selection {
+    background-color: #ffffff35;
+}
+
 /* <body> */
 body {
-    background-color: #F4F5F7;
+    background-color: #29293a;
     font-family: 'Source Sans Pro';
+    color: white;
     overflow-x: hidden;
 }
 
@@ -30,12 +46,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #F4F5F7;
+    background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #ADB1B1;
+    background: #adb1b19e;
     border-radius: 10px;
 }
 
@@ -69,7 +85,7 @@ body {
     }
 
     .dropdown-toggle {
-        background-color: #4d47851b !important;
+        background-color: #ffffff !important;
         font-size: 20px !important;
         border-radius: 10px !important;
     }
@@ -117,6 +133,7 @@ body {
         text-align: center;
         font-size: 5vw !important;
         line-height: 4vw !important;
+        margin: 0 !important;
     }
 
     .btn-skills {
@@ -166,6 +183,7 @@ body {
 
     .skills-col-1 {
         align-items: center;
+        margin: 0 !important;
     }
 
     .skills-col-1-row-1 {
@@ -320,6 +338,10 @@ body {
         font-size: 15px !important;
     }
 
+    .am-col-1-row-1 {
+        margin: 0 !important;
+    }
+
     .img-skills,
     .img-portraite {
         display: none;
@@ -347,6 +369,7 @@ body {
     .skills-col-1,
     .am-col-1 {
         align-items: center;
+        margin: 0 !important;
     }
 
     .skills-col-1-row-1,
@@ -394,9 +417,8 @@ body {
 /* <Navbar> */
 
 .navbar-container {
-    background-color: #ffffff2e;
-    backdrop-filter: blur(40px);
-    color: #4D4785;
+    backdrop-filter: blur(20px);
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -411,7 +433,6 @@ body {
 .navbar-brand {
     font-family: 'Gloock';
     font-size: 1.5rem;
-    margin-right: 200px;
     margin-bottom: 10px;
 }
 
@@ -420,7 +441,7 @@ body {
 }
 
 a {
-    color: #4D4785 !important;
+    color: white !important;
 }
 
 .navbar-items {
@@ -438,7 +459,7 @@ a {
 }
 
 .navbar-item:hover {
-    background-color: #46479832 !important;
+    background-color: rgba(255, 255, 255, 0.214) !important;
 }
 
 /* </Navbar> */
@@ -469,7 +490,7 @@ a {
 }
 
 .btn-skills {
-    background-color: #524530c4;
+    background-color: #4d497c;
     border: none;
     padding: 10px;
     border-radius: 10px;
@@ -481,19 +502,19 @@ a {
     font-size: 1vw;
     margin-top: 50px;
     font-family: 'Gloock';
-    box-shadow: 0 10px 90px -5px #524530c4;
+    box-shadow: 0 10px 90px -5px #4d497c;
     font-weight: bold;
     width: 40%;
 }
 
 .btn-skills:hover {
     translate: 0 -7px;
-    box-shadow: 0 17px 100px -5px #524530c4;
+    box-shadow: 0 17px 100px -5px #4d497c;
 }
 
 .btn-pdf {
     background-color: unset;
-    color: rgba(0, 0, 0, 0.459) !important;
+    color: white !important;
     font-family: 'Poppins' !important;
     border: none;
     padding: 25px;
@@ -510,13 +531,13 @@ a {
 
 .btn-pdf:hover {
     color: rgb(255, 255, 255) !important;
-    background-color: rgba(0, 0, 0, 0.319);
+    background-color: rgba(64, 70, 106, 0.203);
 }
 
 .img-portraite {
     height: 35vw;
     border-radius: 20px;
-    filter: drop-shadow(0 0 100px #524530c4);
+    filter: drop-shadow(0 0 100px #0000005a);
     margin-left: -150px;
 }
 
@@ -560,7 +581,7 @@ a {
     font-size: 1vw;
     margin-top: 50px;
     font-family: 'Gloock';
-    box-shadow: 0 10px 90px -5px #4D4785;
+    box-shadow: 0 10px 90px -5px #3b3766;
     font-weight: bold;
 }
 
@@ -572,7 +593,7 @@ a {
 .img-skills {
     height: 35vw;
     border-radius: 20px;
-    filter: drop-shadow(0 0 100px #ADB1B1);
+    filter: drop-shadow(0 0 100px #adb1b196);
 }
 
 /* </Skills> */
@@ -607,8 +628,8 @@ a {
     align-items: center;
     margin-bottom: 50px;
     box-shadow:
-        10px 10px 30px 0 rgba(0, 0, 0, 0.062),
-        -10px -10px 30px 0 rgb(255, 255, 255);
+        10px 10px 30px 0 rgba(0, 0, 0, 0.329),
+        -10px -10px 30px 0 #36364c;
 }
 
 .skill-info {
@@ -622,8 +643,8 @@ a {
     padding: 20px;
     border-radius: 10px;
     box-shadow:
-        inset 10px 10px 30px 0 #4d478517,
-        inset -10px -10px 30px 0 rgb(255, 255, 255);
+        inset 10px 10px 30px 0 rgba(0, 0, 0, 0.329),
+        inset -10px -10px 30px 0 #36364c;
 }
 
 .skill-title {
@@ -669,9 +690,8 @@ a {
     height: 200px;
     border-radius: 20px;
     padding: 20px;
-    box-shadow:
-        10px 10px 30px 0 rgba(0, 0, 0, 0.062),
-        -10px -10px 30px 0 rgb(255, 255, 255);
+    box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.329),
+        -10px -10px 30px 0 #36364c;
 }
 
 .exp-brand-img {
@@ -680,8 +700,8 @@ a {
     border-radius: 20px;
     margin-right: 50px;
     box-shadow:
-        inset 10px 10px 30px 0 rgba(0, 0, 0, 0.062),
-        inset -10px -10px 30px 0 rgb(255, 255, 255);
+        inset 10px 10px 30px 0 rgba(0, 0, 0, 0.329),
+        inset -10px -10px 30px 0 #36364c;
 }
 
 .exp-info {
@@ -689,6 +709,7 @@ a {
     font-family: 'Poppins';
     display: flex;
     justify-content: space-between;
+    color: white !important;
     align-items: center;
     width: 100%;
 }
@@ -723,18 +744,18 @@ a {
 
 .exp-shortInfo {
     font-size: 1vw;
-    color: rgba(0, 0, 0, 0.534);
+    color: rgba(255, 255, 255, 0.534);
     line-height: 1vw;
 }
 
 .exp-license {
     font-size: 1vw;
-    color: rgba(0, 0, 0, 0.534);
+    color: rgba(255, 255, 255, 0.534);
     line-height: 1vw;
 }
 
 .license-header {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* </Experiences> */
@@ -777,8 +798,8 @@ a {
     padding: 20px;
     border-radius: 20px;
     box-shadow:
-        10px 10px 30px 0 rgba(0, 0, 0, 0.062),
-        -10px -10px 30px 0 rgb(255, 255, 255);
+        10px 10px 30px 0 rgba(0, 0, 0, 0.329),
+        -10px -10px 30px 0 #36364c;
 }
 
 .proj-brand-img {
@@ -876,8 +897,8 @@ a {
     padding: 20px;
     align-items: center;
     box-shadow:
-        10px 10px 30px 0 rgba(0, 0, 0, 0.062),
-        -10px -10px 30px 0 rgb(255, 255, 255);
+        10px 10px 30px 0 rgba(0, 0, 0, 0.329),
+        -10px -10px 30px 0 #36364c;
 }
 
 .contact-brand-img {
@@ -886,8 +907,8 @@ a {
     padding: 20px;
     border-radius: 20px;
     box-shadow:
-        inset 10px 10px 30px 0 rgba(0, 0, 0, 0.062),
-        inset -10px -10px 30px 0 rgb(255, 255, 255);
+        inset 10px 10px 30px 0 rgba(0, 0, 0, 0.329),
+        inset -10px -10px 30px 0 #36364c;
 }
 
 .contact-info {
